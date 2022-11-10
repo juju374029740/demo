@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>...</title>
+
+    <meta name="description" content="" />
+
+    <meta name="keywords" content="" />
+
+    <link href="" rel="stylesheet" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul,
+      ol {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      body {
+        background-color: #8a0a0a;
+      }
+
+      .love {
+        display: table;
+
+        flex-wrap: wrap;
+
+        margin: 100px auto;
+      }
+
+      .box {
+        float: left;
+
+        width: 25px;
+
+        height: 25px;
+
+        border-radius: 2px;
+
+        margin-right: 2px;
+
+        margin-bottom: 2px;
+      }
+
+      .box:hover {
+        background: #8a0a0a;
+      }
+
+      .box:not(.transparent) {
+        background-color: #fff;
+
+        opacity: 0;
+
+        transform: translateY(-300px);
+
+        animation: move 4s infinite;
+      }
+
+      @keyframes move {
+        25% {
+          opacity: 1;
+
+          transform: translateY(0);
+        }
+
+        50% {
+          opacity: 1;
+
+          transform: translateY(0);
+        }
+
+        65% {
+          opacity: 1;
+
+          transform: translateY(0);
+        }
+
+        100% {
+          opacity: 0;
+
+          transform: translateY(300px);
+        }
+      }
+
+      .box.delay1 {
+        animation-delay: 0.1s;
+      }
+
+      .box.delay2 {
+        animation-delay: 0.2s;
+      }
+
+      .box.delay3 {
+        animation-delay: 0.4s;
+      }
+
+      .box.delay4 {
+        animation-delay: 0.5s;
+      }
+
+      .box.delay5 {
+        animation-delay: 0.7s;
+      }
+
+      .box.delay6 {
+        animation-delay: 0.9s;
+      }
+
+      p {
+        width: 1000px;
+
+        margin: 200px auto 0;
+
+        color: #fff;
+
+        font-size: 40px;
+
+        text-align: center;
+      }
+
+      .aaa {
+        width: 200px;
+        height: 400px;
+        position: relative;
+        margin: 400px auto;
+        transform: all 0.5s;
+      }
+      @keyframes moves {
+        from {
+          box-shadow: 0 0 0 transparent;
+        }
+        30% {
+          box-shadow: 0 0 50px rgb(236, 57, 57);
+        }
+        60% {
+          box-shadow: 0 0 80px rgb(241, 97, 97);
+        }
+      }
+      .aaa > div {
+        animation: moves 1s infinite;
+        transition-delay: 1s;
+      }
+      .aaa_1 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: red;
+        border-bottom: 0;
+      }
+      div:nth-child(2) {
+        position: absolute;
+        top: 0;
+        left: 80px;
+      }
+      .aaa_2 {
+        width: 100px;
+        height: 130px;
+        background: red;
+        transform: rotateZ(57deg);
+      }
+      .aaa > div:nth-child(3) {
+        position: absolute;
+        top: 2px;
+        right: 31px;
+        background-color: red;
+        border-radius: 50% 50% 0% 0;
+        box-shadow: 0 0 0 transparent !important;
+      }
+      .aaa > div:last-child {
+        position: absolute;
+        top: 4px;
+        left: 12px;
+        transform: rotateZ(122deg);
+        border-radius: 0 0% 50% 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="love">
+      <div class="box transparent"></div>
+      <div class="box transparent"></div>
+      <div class="box white delay2"></div>
+      <div class="box white delay6"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box white delay4"></div>
+
+      <div class="box white delay3"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box clear white delay5"></div>
+
+      <div class="box white delay5"></div>
+
+      <div class="box white delay6"></div>
+
+      <div class="box white delay3"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box white delay6"></div>
+
+      <div class="box white delay1"></div>
+
+      <div class="box white delay4"></div>
+
+      <div class="box white delay2"></div>
+
+      <div class="box clear white"></div>
+
+      <div class="box white delay1"></div>
+
+      <div class="box white delay4"></div>
+
+      <div class="box white delay2"></div>
+
+      <div class="box white delay6"></div>
+
+      <div class="box whitedelay3"></div>
+
+      <div class="box white delay6"></div>
+
+      <div class="box white delay3"></div>
+
+      <div class="box white delay1"></div>
+
+      <div class="box clear white"></div>
+
+      <div class="box white delay3"></div>
+
+      <div class="box white delay1"></div>
+
+      <div class="box white delay1"></div>
+
+      <div class="box white delay6"></div>
+
+      <div class="box white delay3"></div>
+
+      <div class="box white delay5"></div>
+
+      <div class="box white delay2"></div>
+
+      <div class="box white delay4"></div>
+
+      <div class="box clear transparent"></div>
+
+      <div class="box white delay6"></div>
+
+      <div class="box white delay1"></div>
+
+      <div class="box white delay5"></div>
+
+      <div class="box white delay1"></div>
+
+      <div class="box white delay5"></div>
+
+      <div class="box white delay3"></div>
+
+      <div class="box white delay4"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box clear transparent"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box white delay5"></div>
+
+      <div class="box white delay1"></div>
+
+      <div class="box white delay5"></div>
+
+      <div class="box white delay2"></div>
+
+      <div class="box white"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box clear transparent"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box white"></div>
+
+      <div class="box white"></div>
+
+      <div class="box white delay2"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box clear transparent"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box white delay1"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box transparent"></div>
+
+      <div class="box transparent"></div>
+    </div>
+
+    <p></p>
+    <div class="aaa">
+      <div class="aaa_1"></div>
+      <div class="aaa_1"></div>
+      <div class="aaa_2"></div>
+      <div class="aaa_2"></div>
+    </div>
+  </body>
+</html>
